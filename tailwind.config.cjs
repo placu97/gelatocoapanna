@@ -6,7 +6,13 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily:{
+      'poppins': ['Poppins', 'sans-serif'],
+      'adelia': ['ADELIA', 'sans-serif']
+    },
+    
     extend: {},
+
   },
   plugins: [],
 }

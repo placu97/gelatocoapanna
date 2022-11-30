@@ -1,11 +1,11 @@
-import './App.css'
+import Quote from "./components/Quote";
+import HeroSection from "./components/HeroSection";
 
 export default function App() {
   return (
-    <div className="App">
-      <h1>
-
-      </h1>
-    </div>
-  )
+    <>
+      <Quote />
+      <HeroSection />
+    </>
+  );
 }

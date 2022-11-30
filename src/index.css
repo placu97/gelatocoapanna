@@ -72,3 +72,51 @@ button:focus-visible {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.cdnfonts.com/css/adelia');
+
+@layer base {
+  @keyframes moveUp {
+    100%{
+      transform: translateY(0)
+    }
+  }
+  span {
+   /* @apply bg-blue-300; */
+   @apply absolute;
+   @apply translate-y-12;
+   @apply font-thin;
+   /* anim bottom up */
+   animation-name: moveUp;
+   animation-duration: 2.5s;
+   animation-timing-function: ease;
+   animation-fill-mode: forwards;
+   /* linear gradient of the text */
+   @apply bg-gradient-to-tr from-purple-500 via-cyan-200 to-yellow-300;
+   @apply bg-clip-text;
+   @apply text-transparent;
+  }
+  h2 {
+    @apply text-xl;
+  }
+  .text {
+    @apply w-1/2;
+    @apply relative;
+    @apply h-8;
+    @apply text-3xl;
+    @apply overflow-hidden;
+  }
+  
+
+  /* ... */
+}
+
+html,
+body,
+#root {
+  /* width: 100%; */
+  /* height: 100%; */
+  /* margin: 0;
+  padding: 0; */
+  background-color: black;
+}
